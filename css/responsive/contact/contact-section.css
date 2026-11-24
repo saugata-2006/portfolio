@@ -1,0 +1,27 @@
+@media(max-width:768px){
+
+    .contact_us form .contact_sec{
+        flex-wrap: wrap;
+    }
+
+    .contact_us form .contact_sec .first_contact{
+        width: 100%;
+    }
+
+    .first_contact input{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:430px){
+
+    .contact_us form{
+        width: 100%;
+    }
+
+    .contact_us form .contact_sec .first_contact{
+        width: 380px;
+    }
+
+}

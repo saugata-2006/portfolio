@@ -1,0 +1,28 @@
+@media (max-width: 991px) {
+
+    .timeline-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .timeline-section {
+        padding: 25px 6% 25px;
+    }
+
+    .timeline-title {
+        font-size: 22px;
+    }
+
+    .timeline-content h3 {
+        font-size: 16px;
+    }
+
+    .timeline-content p {
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,88 @@
+/* =========================
+   SECTION HEADING RESPONSIVE
+========================= */
+
+@media(max-width:1365px){
+
+    .ab-new{
+        justify-content: flex-start;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .ab-new .ab2 strong.filltext{
+        font-size: 50px;
+    }
+
+    .ab-new .ab2 h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .ab-new p{
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:400px){
+
+    .ab-new .ab2 strong.filltext{
+        font-size: 45px;
+    }
+
+}
+
+
+
+
+/* =========================
+   SKILLS RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .skills{
+        gap: 10px;
+    }
+
+    .skills_box{
+        max-width: 100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .skills{
+        padding: 70px 6%;
+    }
+
+    .skill1{
+        padding: 18px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .skills{
+        padding: 60px 5%;
+    }
+
+    .skill_sub_head{
+        font-size: 14px;
+    }
+
+    .skill1{
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .leble{
+        height: 10px;
+    }
+
+}

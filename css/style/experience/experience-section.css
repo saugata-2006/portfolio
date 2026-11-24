@@ -1,0 +1,387 @@
+/* =========================
+   SECTION HEADING
+========================= */
+
+.ab-new{
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    padding: 100px 9% 40px;
+
+    color: #fff;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.ab-new .ab2{
+
+    width: 550px;
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+/* BIG STROKE TEXT */
+
+.ab-new .ab2 strong.filltext{
+
+    position: absolute;
+
+    top: -30px;
+    left: 0;
+
+    z-index: -1;
+
+    font-size: 70px;
+
+    letter-spacing: -3px;
+
+    text-transform: uppercase;
+
+    -webkit-text-fill-color: transparent;
+
+    -webkit-text-stroke: 1px #e8fffd33;
+}
+
+/* SMALL TITLE */
+
+.ab-new .ab2 span{
+
+    color: #00ffee;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+/* MAIN HEADING */
+
+.ab-new .ab2 h2{
+
+    font-size: 35px;
+
+    line-height: 55px;
+
+    text-transform: uppercase;
+}
+
+.ab-new .ab2 h2 span{
+    color: #00ffee;
+}
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.ab-new p{
+
+    max-width: 540px;
+
+    padding-left: 30px;
+
+    margin-top: -10px;
+
+    border-left: 3px solid #00ffee;
+
+    line-height: 26px;
+
+    letter-spacing: 1px;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    text-transform: capitalize;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills{
+
+    width: 100%;
+    min-height: 65vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    padding: 0 9%;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* =========================
+   SKILL BOX
+========================= */
+
+.skills_box{
+
+    flex: 1 1 450px;
+
+    max-width: 550px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* LEFT ANIMATION */
+
+.skills_box:nth-child(1){
+    animation: leftAnim 1s ease;
+}
+
+/* RIGHT ANIMATION */
+
+.skills_box:nth-child(2){
+    animation: rightAnim 1s ease;
+}
+
+@keyframes leftAnim{
+
+    from{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes rightAnim{
+
+    from{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+/* =========================
+   SKILL CARD
+========================= */
+
+.skill1{
+
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 22px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(12px);
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: .4s ease;
+}
+
+/* HOVER */
+
+.skill1:hover{
+
+    transform: translateY(-8px) scale(1.01);
+
+    border-color: #00ffee;
+
+    box-shadow: 0 0 25px rgba(0,255,238,.2);
+}
+
+/* SHINE EFFECT */
+
+.skill1::before{
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.08),
+        transparent
+    );
+
+    transition: .8s;
+}
+
+.skill1:hover::before{
+    left: 100%;
+}
+
+/* =========================
+   TOP HEADING
+========================= */
+
+.skill_sub_head{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 14px;
+
+    color: #fff;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.leble{
+
+    width: 100%;
+    height: 12px;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    padding: 2px;
+
+    background: rgba(255,255,255,0.12);
+}
+
+/* INNER BAR */
+
+.persentage{
+
+    height: 100%;
+
+    border-radius: 30px;
+
+    position: relative;
+
+    background: linear-gradient(
+        90deg,
+        #00ffee,
+        #00b7ff
+    );
+
+    animation: fillBar 2s ease;
+}
+
+/* DOT */
+
+.persentage::after{
+
+    content: '';
+
+    position: absolute;
+
+    top: 50%;
+    right: 0;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    transform: translateY(-50%);
+
+    box-shadow: 0 0 15px #00ffee;
+}
+
+/* ANIMATION */
+
+@keyframes fillBar{
+
+    from{
+        width: 0;
+    }
+
+}
+
+/* =========================
+   PERCENTAGE WIDTH
+========================= */
+
+.html{
+    width: 80%;
+}
+
+.css{
+    width: 70%;
+}
+
+.js{
+    width: 65%;
+}
+
+.bs{
+    width: 75%;
+}
+
+.react{
+    width: 55%;
+}
+
+.php{
+    width: 20%;
+}
+
+.ui{
+    width: 85%;
+}
+
+.app{
+    width: 60%;
+}

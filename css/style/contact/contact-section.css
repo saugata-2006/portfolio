@@ -1,0 +1,113 @@
+/* =========================
+   Contact Section
+========================= */
+
+.contact_us{
+    justify-items: center;
+    align-content: center;
+    padding: 60px 9% 60px;
+}
+
+/* =========================
+   Form
+========================= */
+
+.contact_us form{
+    width: 60%;
+}
+
+/* =========================
+   Contact Row
+========================= */
+
+.contact_us form .contact_sec{
+    display: flex;
+    gap: 40px;
+}
+
+/* =========================
+   Input Box
+========================= */
+
+.contact_us form .contact_sec .first_contact{
+    display: grid;
+    gap: 5px;
+    width: 260%;
+}
+
+/* =========================
+   Label
+========================= */
+
+.first_contact label{
+    color: #ffffffbd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 570;
+}
+
+/* =========================
+   Input
+========================= */
+
+.first_contact input{
+    outline: none;
+    background-color: #1f242d00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #00ffee;
+    padding: 7px 0px;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =========================
+   Button
+========================= */
+
+button{
+    border-radius: 10px;
+    margin: 20px 0px 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: .5s;
+    background-color:#00ffee ;
+    box-shadow: 0 0 5px #00ffee;
+    border: 2px solid #00ffee;
+    padding: 7px 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =========================
+   Button Link
+========================= */
+
+button .con_sub{
+    transition: .5s;
+    text-decoration: none;
+    color: #1f242d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* =========================
+   Hover Effect
+========================= */
+
+button:hover{
+    box-shadow: none;
+    border: 2px solid #00ffee;
+    color: #00ffee;
+    background-color: #1f242d;
+}
+
+button:hover .con_sub{
+    color:#00ffee;
+}

@@ -1,0 +1,288 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about_details{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    flex-wrap: wrap-reverse;
+
+    padding: 30px 9% 60px;
+}
+
+/* =========================
+   LEFT IMAGE
+========================= */
+
+.ab_img_content{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PROFILE */
+
+.profile_pic{
+
+    position: relative;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px #00ffee;
+}
+
+/* IMAGE BOX */
+
+.profile_pic .pp{
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    border: 2px solid #fff;
+
+    position: relative;
+}
+
+/* IMAGE */
+
+.profile_pic img{
+
+    position: absolute;
+
+    top: -40px;
+
+    width: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+/* =========================
+   PLAY BUTTON
+========================= */
+
+.play_button{
+
+    position: absolute;
+
+    right: -27px;
+    top: 135px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: #14171c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 6px #adfffa;
+}
+
+/* ANIMATION RING */
+
+.play_button::before,
+.play_button::after{
+
+    content: '';
+
+    position: absolute;
+
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+
+    border: 10px solid #0cd4c7;
+
+    border-radius: 50%;
+
+    opacity: 0;
+
+    animation: zoom 1.5s linear infinite;
+}
+
+.play_button::after{
+    animation-delay: .4s;
+}
+
+@keyframes zoom{
+
+    0%{
+        transform: scale(.5);
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+
+}
+
+/* ICON */
+
+.play_button i{
+    color: #0cd4c7;
+    font-size: 20px;
+}
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.ab_content{
+
+    width: 65%;
+
+    margin-top: 20px;
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BIG STROKE TEXT */
+
+.ab_content strong.filltext{
+
+    position: absolute;
+
+    top: -30px;
+    left: 0;
+
+    z-index: -1;
+
+    font-size: 80px;
+
+    font-family: 'Oswald', sans-serif;
+
+    text-transform: uppercase;
+
+    -webkit-text-fill-color: transparent;
+
+    -webkit-text-stroke: 1px #e8fffd33;
+}
+
+/* HEADING */
+
+.ab_content h2{
+
+    font-size: 44px;
+
+    line-height: 55px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+
+    font-family: 'Oswald', sans-serif;
+}
+
+.ab_content h2 span{
+    color: #00ffee;
+}
+
+/* PARAGRAPH */
+
+.ab_content p{
+
+    margin: 40px 0;
+
+    line-height: 25px;
+
+    letter-spacing: 1px;
+
+    color: #ffffffa6;
+
+    font-weight: 400;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.ab_content a.cbtn.cbnt1{
+
+    position: relative;
+
+    display: inline-block;
+
+    padding: 17px 18px;
+
+    padding-right: 70px;
+
+    border-radius: 4px;
+
+    background: #00ffee;
+
+    border: 1px solid #00ffee;
+
+    color: #303030;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    transition: .5s;
+}
+
+/* HOVER */
+
+.ab_content a.cbtn.cbnt1:hover{
+
+    background: transparent;
+
+    color: #00ffee;
+}
+
+/* ICON */
+
+a.cbtn.cbnt1 i{
+
+    position: absolute;
+
+    top: 50%;
+    right: 15px;
+
+    width: 30px;
+    height: 30px;
+
+    line-height: 30px;
+    text-align: center;
+
+    margin-top: -15px;
+
+    border-radius: 4px;
+
+    background: #fff;
+
+    color: #00ffee;
+
+    font-size: 20px;
+}

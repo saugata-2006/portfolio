@@ -1,0 +1,449 @@
+/* ================= FOOTER ================= */
+
+.sec_cont{
+    position: relative;
+    padding: 0px 9% 10px;
+    background-color: #000000;
+}
+
+.sec_cont .overlay_contact{
+
+    position: relative;
+    top: -70px;
+
+    gap: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 9% 20px;
+
+    border-radius: 10px;
+
+    background-color: #21252e;
+
+    box-shadow: 0 0 4px #00ffee;
+
+    animation: contact 2.5s linear infinite;
+}
+
+@keyframes contact{
+
+    0%{
+        transform: translateY(-3%);
+    }
+
+    25%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(3%);
+    }
+
+    75%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-3%);
+    }
+
+}
+
+.overlay_contact .layer{
+
+    padding: 0px 20px 20px;
+
+    text-align: center;
+
+    position: relative;
+
+    top: -30px;
+
+    height: 200px;
+    width: 250px;
+}
+
+.overlay_contact .layer:nth-child(1){
+    width: 320px;
+}
+
+.layer .overlay_logo{
+
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 4px #00ffee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    color: #00ffee;
+
+    font-size: 26px;
+
+    background-color: #21252e;
+}
+
+.layer h4{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding: 5px 0px;
+
+    color: #00ffee;
+
+    font-weight: 500;
+
+    font-size: 19px;
+
+    letter-spacing: 2px;
+}
+
+.layer span{
+
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    line-height: 22px;
+}
+
+/* ================= COPYRIGHT ================= */
+
+.sec_cont .copy_right{
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    padding: 0px 0% 10px;
+}
+
+.copy_right .about_contact{
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 3px;
+
+    width: 200px;
+}
+
+.about_contact .ab_logo{
+
+    height: 40px;
+    width: 40px;
+
+    overflow: hidden;
+}
+
+.ab_logo img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.about_contact .ab_name{
+
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+
+    gap: 6px;
+
+    letter-spacing: 4px;
+}
+
+.ab_name .nst{
+    font-weight: 560;
+    color: #00ffee;
+}
+
+.copy{
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.copy span{
+
+    color: #f7f7f7;
+
+    font-size: 16px;
+
+    letter-spacing: .7px;
+
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 4px;
+}
+
+.copy i{
+
+    text-shadow:
+        1px 1px 0 #00ffee,
+        -1px 1px 0 #00ffee,
+        1px -1px 0 #00ffee,
+        -1px -1px 0 #00ffee;
+
+    color: #000000;
+}
+
+.copy span .sa{
+    color: #00ffee;
+}
+
+.copy .copy_img{
+
+    height: 30px;
+    width: 30px;
+
+    overflow: hidden;
+}
+
+.copy .copy_img img{
+
+    height: 100%;
+    width: 100%;
+}
+
+/* ================= SETTING BUTTON ================= */
+
+.setting{
+
+    background-color: #1f242d;
+
+    position: fixed;
+
+    left: 0;
+    top: 50%;
+
+    height: 35px;
+    width: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    box-shadow: 0px 0px 10px #00ffee;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    font-size: 18px;
+
+    text-decoration: none;
+
+    color: #1f242d;
+
+    text-shadow:
+        1px 1px 0 #00ffee,
+        -1px 1px 0 #00ffee,
+        1px -1px 0 #00ffee,
+        -1px -1px 0 #00ffee;
+}
+
+.setting i{
+
+    animation: setting 2s linear infinite;
+
+    transform: rotate(0deg);
+}
+
+.setting:hover i{
+    animation-play-state: paused;
+}
+
+@keyframes setting{
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+/* ================= SCROLL BUTTON ================= */
+
+.arrow{
+
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50%;
+
+    background-color: #1f242d;
+
+    position: fixed;
+
+    bottom: 35px;
+    right: 35px;
+
+    z-index: 764;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #1f242d;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    box-shadow: 0px 0px 15px #00ffee;
+
+    text-shadow:
+        1px 1px 0 #00ffee,
+        -1px 1px 0 #00ffee,
+        1px -1px 0 #00ffee,
+        -1px -1px 0 #00ffee;
+
+    animation: arrow 1.5s linear infinite;
+}
+
+@keyframes arrow{
+
+    0%{
+        transform: scale(.9);
+    }
+
+    50%{
+        transform: scale(1);
+        box-shadow: 0px 0px 10px #00ffee;
+        text-shadow: none;
+    }
+
+    100%{
+        transform: scale(.9);
+    }
+
+}
+
+/* ================= CUSTOM CURSOR ================= */
+
+body{
+    cursor: none;
+}
+
+.cursor{
+
+    position: fixed;
+
+    width: 40px;
+    height: 40px;
+
+    z-index: 9999;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    background: radial-gradient(
+        circle,
+        #00ffee50,
+        #00b4a8b2,
+        transparent 70%
+    );
+
+    box-shadow: 0 0 30px #00ffee;
+}
+
+.dot{
+
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    background: #00ffee;
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.particle{
+
+    position: fixed;
+
+    width: 2.5px;
+    height: 2.5px;
+
+    background: #00ffee;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    opacity: 1;
+
+    box-shadow: 0 0 6px #00ffee;
+}
+
+/* ================= SCROLL EFFECT ================= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+.section{
+
+    min-height: 100vh;
+
+    padding: 80px 40px;
+
+    opacity: 0;
+
+    transform: translateY(80px);
+
+    transition: all 0.8s ease;
+}
+
+.section.show{
+
+    opacity: 1;
+
+    transform: translateY(0);
+}

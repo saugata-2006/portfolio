@@ -1,0 +1,96 @@
+/* ================= MEDIA QUERY ================= */
+
+@media(max-width:768px){
+
+    .overlay_contact{
+        gap: 20px;
+    }
+
+    .overlay_contact .layer{
+        width: 100%;
+        height: auto;
+    }
+
+    .copy{
+        text-align: center;
+    }
+
+    .copy span{
+        font-size: 14px;
+    }
+
+    .arrow{
+        height: 50px;
+        width: 50px;
+        font-size: 18px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .setting{
+        width: 48px;
+        height: 32px;
+    }
+
+    .cursor{
+        display: none;
+    }
+
+}
+
+/* ================= 480PX ================= */
+
+@media(max-width:480px){
+
+    .sec_cont{
+        padding: 0px 5% 10px;
+    }
+
+    .overlay_contact{
+        padding: 0px 5% 20px;
+        top: -50px;
+    }
+
+    .overlay_contact .layer{
+        padding: 0px 10px 15px;
+    }
+
+    .layer h4{
+        font-size: 17px;
+    }
+
+    .layer span{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .copy{
+        gap: 10px;
+    }
+
+    .copy span{
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .about_contact .ab_name{
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+
+    .arrow{
+        height: 45px;
+        width: 45px;
+        font-size: 16px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .setting{
+        width: 42px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+}

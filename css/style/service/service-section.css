@@ -1,0 +1,157 @@
+/* =========================
+   Main Service Section
+========================= */
+
+.main_service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 9% 30px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   Service Card
+========================= */
+
+.main_service .service_content{
+    border: 1px solid rgb(66, 66, 66);
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #1f242d;
+    position: relative;
+    z-index: 555;
+}
+
+/* =========================
+   Before Effect
+========================= */
+
+.main_service .service_content::before{
+    content: '';
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #00ffee;
+    z-index: -6;
+    bottom: -2px;
+    left: -2px;
+    box-shadow: 0px 0px 4px #00ffee;
+    transition: .7s;
+}
+
+/* =========================
+   After Effect
+========================= */
+
+.main_service .service_content::after{
+    right: -2px;
+    top: -2px;
+    content: '';
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #00ffee;
+    z-index: -6;
+    box-shadow: 0px 0px 4px #00ffee;
+    transition: .7s;
+}
+
+/* =========================
+   Hover Effect
+========================= */
+
+.kalu{
+    border-radius: 15px;
+}
+
+.kalu:hover .service_content::before{
+    height: 100%;
+    width: 100%;
+}
+
+.kalu:hover .service_content::after{
+    height: 100%;
+    width: 100%;
+}
+
+/* =========================
+   Inner Background
+========================= */
+
+.service_content .ser_bg{
+    height: 100%;
+    width: 100%;
+    background-color: #1f242d;
+    padding: 12px 15px;
+    border-radius: 10px;
+}
+
+/* =========================
+   Icon Box
+========================= */
+
+.service_content .supports{
+    border: 2px solid #00ffee;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ffee;
+    font-size: 20px;
+    background-color: #1f242d;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.service_content h5{
+    color: #fff;
+    padding: 12px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: #1f242d;
+}
+
+/* =========================
+   Paragraph
+========================= */
+
+.service_content p{
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffffa8;
+    background-color: #1f242d;
+}
+
+/* =========================
+   Button
+========================= */
+
+.service_content .service_btn{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 20px;
+    margin: 25px 0 5px;
+    color: #00ffee;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #1f242d;
+}
+
+.service_content .service_btn i{
+    font-size: 15px;
+    padding-top: 2px;
+    background-color: #1f242d;
+}
